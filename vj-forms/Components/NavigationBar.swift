@@ -8,11 +8,31 @@
 import SwiftUI
 
 struct NavigationBar: View {
+    
+    var title: String = ""
+    var buttonIcon: ImageResource
+    var buttonAction: (() -> Void)?
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack {
+            Text(title)
+                .padding()
+                .foregroundColor(.white)
+                .fontWeight(.bold)
+            Spacer()
+            Button(action: {
+                if let fn = buttonAction {
+                    fn()
+                }
+            }) {
+                Image(buttonIcon)
+            }
+            .padding(.trailing, 12)
+        }
+        .background(Color(UIColor(resource: .steelBlue)))
     }
 }
 
 #Preview {
-    NavigationBar()
+    NavigationBar(title: "Start a Application", buttonIcon: .accountCircle)
 }
