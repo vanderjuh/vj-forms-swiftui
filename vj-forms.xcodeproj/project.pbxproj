@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2770B5162BFAAE4100B4E1E2 /* VjTfaExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2770B5152BFAAE4100B4E1E2 /* VjTfaExt.swift */; };
+		2770B5182BFAAEC300B4E1E2 /* TfaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2770B5172BFAAEC300B4E1E2 /* TfaView.swift */; };
 		2782A5B62BF9839300EF995C /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2782A5B52BF9839300EF995C /* SignUpView.swift */; };
 		2782A5BB2BF98F2C00EF995C /* VjTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2782A5BA2BF98F2C00EF995C /* VjTextField.swift */; };
 		2782A5BD2BF993B600EF995C /* VjTextFieldExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2782A5BC2BF993B600EF995C /* VjTextFieldExt.swift */; };
@@ -25,6 +27,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2770B5152BFAAE4100B4E1E2 /* VjTfaExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VjTfaExt.swift; sourceTree = "<group>"; };
+		2770B5172BFAAEC300B4E1E2 /* TfaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TfaView.swift; sourceTree = "<group>"; };
 		2782A5B52BF9839300EF995C /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		2782A5BA2BF98F2C00EF995C /* VjTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VjTextField.swift; sourceTree = "<group>"; };
 		2782A5BC2BF993B600EF995C /* VjTextFieldExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VjTextFieldExt.swift; sourceTree = "<group>"; };
@@ -54,9 +58,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2770B5142BFAAE2800B4E1E2 /* Tfa */ = {
+			isa = PBXGroup;
+			children = (
+				2770B5152BFAAE4100B4E1E2 /* VjTfaExt.swift */,
+				2770B5172BFAAEC300B4E1E2 /* TfaView.swift */,
+			);
+			path = Tfa;
+			sourceTree = "<group>";
+		};
 		2782A5B42BF9836700EF995C /* Pages */ = {
 			isa = PBXGroup;
 			children = (
+				2770B5142BFAAE2800B4E1E2 /* Tfa */,
 				2792236C2BF8F6E600FF147B /* StartApplicationView.swift */,
 				2782A5B52BF9839300EF995C /* SignUpView.swift */,
 			);
@@ -207,6 +221,8 @@
 				27CB659B2BF9188C006DE33B /* NavigationBar.swift in Sources */,
 				2782A5BD2BF993B600EF995C /* VjTextFieldExt.swift in Sources */,
 				279223742BF8F6E700FF147B /* Persistence.swift in Sources */,
+				2770B5162BFAAE4100B4E1E2 /* VjTfaExt.swift in Sources */,
+				2770B5182BFAAEC300B4E1E2 /* TfaView.swift in Sources */,
 				27CB659F2BF93D38006DE33B /* Card.swift in Sources */,
 				2792236D2BF8F6E600FF147B /* StartApplicationView.swift in Sources */,
 				27CB659D2BF92C94006DE33B /* PageHeader.swift in Sources */,

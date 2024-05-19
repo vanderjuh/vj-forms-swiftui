@@ -20,12 +20,14 @@ struct SignUpView: View {
     @State private var securityQuestion: String = ""
     @State private var securityAnswer: String = ""
     @State private var keyboardHeight: CGFloat = 0
+    @State private var showTfaSheet: Bool = false
     
-    private var showNavigationBackButton = false;
+    private var showNavigationBackButton = false
     
     private var keyboardShowPublisher = NotificationCenter.Publisher(center: .default, name: UIResponder.keyboardWillShowNotification)
     
     private var keyboardHidePublisher = NotificationCenter.Publisher(center: .default, name: UIResponder.keyboardWillHideNotification)
+    
     
     var body: some View {
         VStack(spacing: .zero) {
@@ -42,7 +44,9 @@ struct SignUpView: View {
                     VjTextField(label: "Security Question", text: $securityQuestion)
                     VjTextField(label: "Security Answer", text: $securityAnswer)
                     Spacer()
-                    VjPageButton(label: "Save And Continue")
+                    VjPageButton(label: "Save And Continue", action: {
+                        self.showTfaSheet = true;
+                    })
                         .frame(alignment: .bottom)
                 }
                 Spacer()
@@ -62,6 +66,7 @@ struct SignUpView: View {
             // Dismiss keyboard when tapping outside the text field
             UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
         }
+        .vjSetTfaSheet(showTfaSheet: $showTfaSheet)
     }
 }
 

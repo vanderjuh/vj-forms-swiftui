@@ -9,9 +9,13 @@ import SwiftUI
 
 struct VjPageButton: View {
     var label: String
+    var action: (() -> Void)?
+    
     var body: some View {
         Button(action: {
-            // TODO
+            if let fn = action {
+                fn()
+            }
         }){
             Spacer()
             Text(label)
