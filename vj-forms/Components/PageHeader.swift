@@ -13,6 +13,7 @@ struct PageHeader: View {
     var buttonLabel: String?
     var buttonAction: (() -> Void)?
     var icon: ImageResource?
+    var titleSmallFont = false
     
     var body: some View {
         HStack (spacing: 16) {
@@ -28,7 +29,7 @@ struct PageHeader: View {
             
             VStack(alignment: .leading) {
                 Text(title)
-                    .font(.system(size: 32))
+                    .font(.system(size: titleSmallFont ? 16 : 32))
                     .fontWeight(.semibold)
                     .foregroundStyle(.defaultFont)
                 

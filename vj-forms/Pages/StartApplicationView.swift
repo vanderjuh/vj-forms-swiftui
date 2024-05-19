@@ -8,7 +8,7 @@
 import SwiftUI
 import CoreData
 
-struct ContentView: View {
+struct StartApplicationView: View {
     @State private var username: String = ""
     @State private var password: String = ""
     @State private var showAlert = false
@@ -16,8 +16,8 @@ struct ContentView: View {
     
     var body: some View {
         VStack(spacing: .zero) {
-            NavigationBar(title: "Start an Application", buttonIcon: .accountCircle)
-            PageHeader(title: "Hello, Dear.", subTitle: "Choose an service type below to start a new application request.")
+            NavigationBar(title: "Start Application", buttonIcon: .questionIcon)
+            PageHeader(title: NSLocalizedString("hello_dear", comment: ""), subTitle: "Choose an service type below to start a new application request.")
             
             VStack(spacing: 24){
                 Card(title: "Open Commercial Account", subTitle: "Open a commercial account for your business in some minutes.", image: .buildingsIcon)
@@ -37,5 +37,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+    StartApplicationView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
 }
