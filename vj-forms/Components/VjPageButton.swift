@@ -18,12 +18,11 @@ struct VjPageButton: View {
                 .foregroundColor(.white)
                 .textCase(/*@START_MENU_TOKEN@*/.uppercase/*@END_MENU_TOKEN@*/)
                 .font(.system(size: 16))
-                .padding(8)
+                .padding(16)
             Spacer()
         }
         .background(.steelBlue)
         .cornerRadius(8)
-        .frame(width: .infinity)
         .padding(.horizontal)
     }
 }

@@ -13,7 +13,7 @@ struct vj_formsApp: App {
 
     var body: some Scene {
         WindowGroup {
-            SignUpView()
+            StartApplicationView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }

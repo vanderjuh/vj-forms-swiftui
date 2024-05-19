@@ -23,10 +23,12 @@ struct Card: View {
                     .font(.system(size: 16))
                     .fontWeight(.semibold)
                     .foregroundStyle(.defaultFont)
+                    .multilineTextAlignment(/*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/)
                 if let subTitle = subTitle {
                     Text(subTitle)
                         .font(.system(size: 12))
                         .foregroundStyle(.defaultFont)
+                        .multilineTextAlignment(/*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/)
                         .lineLimit(nil)
                         .frame(minHeight: 30, alignment: .top)
                 } else {

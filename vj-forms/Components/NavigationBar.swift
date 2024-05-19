@@ -9,14 +9,25 @@ import SwiftUI
 
 struct NavigationBar: View {
     
+    @Environment(\.presentationMode) var presentationMode
+    
     var title: String = ""
     var buttonIcon: ImageResource
     var buttonAction: (() -> Void)?
+    var showBackButton = false
     
     var body: some View {
         HStack {
+            if(showBackButton){
+                Button(action: {
+                    self.presentationMode.wrappedValue.dismiss()
+                }) {
+                    Image(.arrowBackIcon)
+                }
+                .padding(.leading, 16)
+            }
             Text(title)
-                .padding()
+                .padding(EdgeInsets(top: 16, leading: showBackButton ? 8 : 16, bottom: 16, trailing: 8))
                 .foregroundColor(.white)
                 .fontWeight(.bold)
             Spacer()
@@ -27,12 +38,12 @@ struct NavigationBar: View {
             }) {
                 Image(buttonIcon)
             }
-            .padding(.trailing, 12)
+            .padding(.horizontal, 12)
         }
         .background(Color(UIColor(resource: .steelBlue)))
     }
 }
 
 #Preview {
-    NavigationBar(title: "Start a Application", buttonIcon: .accountCircle)
+    NavigationBar(title: "Start Application", buttonIcon: .questionIcon, showBackButton: false)
 }

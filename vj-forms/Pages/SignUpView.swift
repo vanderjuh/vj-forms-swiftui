@@ -10,6 +10,10 @@ import Combine
 
 struct SignUpView: View {
     
+    init(_ showNavigationBackButton: Bool) {
+        self.showNavigationBackButton = showNavigationBackButton
+    }
+    
     @State private var email: String = ""
     @State private var pass: String = ""
     @State private var confirmPass: String = ""
@@ -17,13 +21,15 @@ struct SignUpView: View {
     @State private var securityAnswer: String = ""
     @State private var keyboardHeight: CGFloat = 0
     
+    private var showNavigationBackButton = false;
+    
     private var keyboardShowPublisher = NotificationCenter.Publisher(center: .default, name: UIResponder.keyboardWillShowNotification)
     
     private var keyboardHidePublisher = NotificationCenter.Publisher(center: .default, name: UIResponder.keyboardWillHideNotification)
     
     var body: some View {
         VStack(spacing: .zero) {
-            NavigationBar(title: "Let's Get Started", buttonIcon: .questionIcon)
+            NavigationBar(title: "Let's Get Started", buttonIcon: .questionIcon, showBackButton: showNavigationBackButton)
             ScrollView {
                 PageHeader(title: "Login Information", subTitle: "Before proceed with the application, you need to create an account.", icon: .passkeyIcon, titleSmallFont: true)
                 VStack(spacing: 16) {
@@ -60,5 +66,5 @@ struct SignUpView: View {
 }
 
 #Preview {
-    SignUpView()
+    SignUpView(true)
 }
