@@ -29,7 +29,9 @@ struct SignUpView: View {
                 PageHeader(title: "Security", subTitle: "This information is used to recovery the password, if needed.", icon: .pinIcon, titleSmallFont: true)
                 VjTextField(label: "Security Question", text: $securityQuestion)
                 VjTextField(label: "Security Answer", text: $securityAnswer)
-                
+                Spacer()
+                VjPageButton(label: "Save And Continue")
+                    .frame(alignment: .bottom)
             }
             Spacer()
         }

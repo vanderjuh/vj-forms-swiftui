@@ -11,6 +11,7 @@
 		2782A5BB2BF98F2C00EF995C /* VjTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2782A5BA2BF98F2C00EF995C /* VjTextField.swift */; };
 		2782A5BD2BF993B600EF995C /* VjTextFieldExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2782A5BC2BF993B600EF995C /* VjTextFieldExt.swift */; };
 		2782A5BF2BF9945000EF995C /* VjSecureField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2782A5BE2BF9945000EF995C /* VjSecureField.swift */; };
+		2782A5C12BF99CB400EF995C /* VjPageButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2782A5C02BF99CB400EF995C /* VjPageButton.swift */; };
 		2792236B2BF8F6E600FF147B /* vj_formsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2792236A2BF8F6E600FF147B /* vj_formsApp.swift */; };
 		2792236D2BF8F6E600FF147B /* StartApplicationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2792236C2BF8F6E600FF147B /* StartApplicationView.swift */; };
 		2792236F2BF8F6E700FF147B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2792236E2BF8F6E700FF147B /* Assets.xcassets */; };
@@ -28,6 +29,7 @@
 		2782A5BA2BF98F2C00EF995C /* VjTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VjTextField.swift; sourceTree = "<group>"; };
 		2782A5BC2BF993B600EF995C /* VjTextFieldExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VjTextFieldExt.swift; sourceTree = "<group>"; };
 		2782A5BE2BF9945000EF995C /* VjSecureField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VjSecureField.swift; sourceTree = "<group>"; };
+		2782A5C02BF99CB400EF995C /* VjPageButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VjPageButton.swift; sourceTree = "<group>"; };
 		279223672BF8F6E600FF147B /* vj-forms.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "vj-forms.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2792236A2BF8F6E600FF147B /* vj_formsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vj_formsApp.swift; sourceTree = "<group>"; };
 		2792236C2BF8F6E600FF147B /* StartApplicationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartApplicationView.swift; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 				27CB659E2BF93D38006DE33B /* Card.swift */,
 				2782A5BA2BF98F2C00EF995C /* VjTextField.swift */,
 				2782A5BE2BF9945000EF995C /* VjSecureField.swift */,
+				2782A5C02BF99CB400EF995C /* VjPageButton.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -210,6 +213,7 @@
 				2782A5BB2BF98F2C00EF995C /* VjTextField.swift in Sources */,
 				2792236B2BF8F6E600FF147B /* vj_formsApp.swift in Sources */,
 				2782A5B62BF9839300EF995C /* SignUpView.swift in Sources */,
+				2782A5C12BF99CB400EF995C /* VjPageButton.swift in Sources */,
 				2782A5BF2BF9945000EF995C /* VjSecureField.swift in Sources */,
 				279223772BF8F6E700FF147B /* vj_forms.xcdatamodeld in Sources */,
 			);
