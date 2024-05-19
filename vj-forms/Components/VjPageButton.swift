@@ -18,7 +18,7 @@ struct VjPageButton: View {
                 .foregroundColor(.white)
                 .textCase(/*@START_MENU_TOKEN@*/.uppercase/*@END_MENU_TOKEN@*/)
                 .font(.system(size: 16))
-                .padding(EdgeInsets(top: 16, leading: .zero, bottom: 16, trailing: .zero))
+                .padding(8)
             Spacer()
         }
         .background(.steelBlue)
