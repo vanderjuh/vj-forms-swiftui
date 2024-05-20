@@ -17,7 +17,7 @@ extension View {
                 TfaView()
                     .presentationDetents([.medium])
                 .presentationCornerRadius(40)
-                .presentationDragIndicator(.hidden)
+                .presentationDragIndicator(.visible)
                 .frame(alignment: .top)
                 .background(Color(UIColor(.defaultBackground)))
             })

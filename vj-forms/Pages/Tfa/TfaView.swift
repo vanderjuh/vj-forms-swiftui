@@ -9,16 +9,13 @@ import SwiftUI
 
 struct TfaView: View {
     @State var code: String = ""
+    @State var goToTermsAndDisclosureView = false
     
     var body: some View {
-        VStack{
+        VStack {
             PageHeader(
                 title: "TFA Request",
                 subTitle: "Please, check your email and inform the single time password code received.",
-                buttonLabel: "Cancel",
-                buttonAction: ({
-                    // TODO
-                }),
                 icon: .pinIcon,
                 titleSmallFont: true
             )
@@ -31,10 +28,15 @@ struct TfaView: View {
                     .fontWeight(.semibold)
                     .font(.system(size: 12))
             }
-            VjPageButton(label: "Verify Code")
+            VjPageButton(label: "Verify Code", action: {
+                self.goToTermsAndDisclosureView = true
+            })
                 .padding(.vertical, 8)
             Spacer()
         }
+        .fullScreenCover(isPresented: $goToTermsAndDisclosureView, content: {
+            TermAndDisclosureView()
+        })
     }
 }
 
