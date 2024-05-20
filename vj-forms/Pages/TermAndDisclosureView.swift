@@ -10,6 +10,7 @@ import SwiftUI
 struct TermAndDisclosureView: View {
     
     @State private var acceptedTerms = false
+    @State private var startApplication = false
     
     var body: some View {
         VStack {
@@ -52,11 +53,14 @@ struct TermAndDisclosureView: View {
             .padding()
             Spacer()
             VjPageButton(label: "START APPLICATION", action: {
-                // TODO
+                self.startApplication = true
             })
             .disabled(!acceptedTerms)
         }
         .background(Color(uiColor: .defaultBackground))
+        .fullScreenCover(isPresented: $startApplication, content: {
+            PersonalQuestionnaireFlowView()
+        })
     }
 }
 

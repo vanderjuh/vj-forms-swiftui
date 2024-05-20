@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		27673A9F2BFAE75700994B59 /* TermAndDisclosureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27673A9E2BFAE75700994B59 /* TermAndDisclosureView.swift */; };
+		27673AA12BFAF72D00994B59 /* PersonalQuestionnaireFlowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27673AA02BFAF72D00994B59 /* PersonalQuestionnaireFlowView.swift */; };
 		2770B5162BFAAE4100B4E1E2 /* VjTfaExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2770B5152BFAAE4100B4E1E2 /* VjTfaExt.swift */; };
 		2770B5182BFAAEC300B4E1E2 /* TfaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2770B5172BFAAEC300B4E1E2 /* TfaView.swift */; };
 		2782A5B62BF9839300EF995C /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2782A5B52BF9839300EF995C /* SignUpView.swift */; };
@@ -29,6 +30,7 @@
 
 /* Begin PBXFileReference section */
 		27673A9E2BFAE75700994B59 /* TermAndDisclosureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermAndDisclosureView.swift; sourceTree = "<group>"; };
+		27673AA02BFAF72D00994B59 /* PersonalQuestionnaireFlowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalQuestionnaireFlowView.swift; sourceTree = "<group>"; };
 		2770B5152BFAAE4100B4E1E2 /* VjTfaExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VjTfaExt.swift; sourceTree = "<group>"; };
 		2770B5172BFAAEC300B4E1E2 /* TfaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TfaView.swift; sourceTree = "<group>"; };
 		2782A5B52BF9839300EF995C /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 		27673A9D2BFAE72600994B59 /* PersonalFlow */ = {
 			isa = PBXGroup;
 			children = (
+				27673AA02BFAF72D00994B59 /* PersonalQuestionnaireFlowView.swift */,
 			);
 			path = PersonalFlow;
 			sourceTree = "<group>";
@@ -241,6 +244,7 @@
 				2782A5BB2BF98F2C00EF995C /* VjTextField.swift in Sources */,
 				2792236B2BF8F6E600FF147B /* vj_formsApp.swift in Sources */,
 				2782A5B62BF9839300EF995C /* SignUpView.swift in Sources */,
+				27673AA12BFAF72D00994B59 /* PersonalQuestionnaireFlowView.swift in Sources */,
 				2782A5C12BF99CB400EF995C /* VjPageButton.swift in Sources */,
 				2782A5BF2BF9945000EF995C /* VjSecureField.swift in Sources */,
 				279223772BF8F6E700FF147B /* vj_forms.xcdatamodeld in Sources */,
