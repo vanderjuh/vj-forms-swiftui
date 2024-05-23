@@ -11,6 +11,9 @@
 		27673AA12BFAF72D00994B59 /* PersonalQuestionnaireFlowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27673AA02BFAF72D00994B59 /* PersonalQuestionnaireFlowView.swift */; };
 		2770B5162BFAAE4100B4E1E2 /* VjTfaExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2770B5152BFAAE4100B4E1E2 /* VjTfaExt.swift */; };
 		2770B5182BFAAEC300B4E1E2 /* TfaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2770B5172BFAAEC300B4E1E2 /* TfaView.swift */; };
+		277ED13B2BFEC6520050EBCB /* RadioButtonQuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277ED13A2BFEC6520050EBCB /* RadioButtonQuestionView.swift */; };
+		277ED13D2BFED0660050EBCB /* TitleTypeQuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277ED13C2BFED0660050EBCB /* TitleTypeQuestionView.swift */; };
+		277ED1402BFED0D10050EBCB /* RadioButtonData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277ED13F2BFED0D10050EBCB /* RadioButtonData.swift */; };
 		2782A5B62BF9839300EF995C /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2782A5B52BF9839300EF995C /* SignUpView.swift */; };
 		2782A5BB2BF98F2C00EF995C /* VjTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2782A5BA2BF98F2C00EF995C /* VjTextField.swift */; };
 		2782A5BD2BF993B600EF995C /* VjTextFieldExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2782A5BC2BF993B600EF995C /* VjTextFieldExt.swift */; };
@@ -33,6 +36,9 @@
 		27673AA02BFAF72D00994B59 /* PersonalQuestionnaireFlowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalQuestionnaireFlowView.swift; sourceTree = "<group>"; };
 		2770B5152BFAAE4100B4E1E2 /* VjTfaExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VjTfaExt.swift; sourceTree = "<group>"; };
 		2770B5172BFAAEC300B4E1E2 /* TfaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TfaView.swift; sourceTree = "<group>"; };
+		277ED13A2BFEC6520050EBCB /* RadioButtonQuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioButtonQuestionView.swift; sourceTree = "<group>"; };
+		277ED13C2BFED0660050EBCB /* TitleTypeQuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleTypeQuestionView.swift; sourceTree = "<group>"; };
+		277ED13F2BFED0D10050EBCB /* RadioButtonData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioButtonData.swift; sourceTree = "<group>"; };
 		2782A5B52BF9839300EF995C /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		2782A5BA2BF98F2C00EF995C /* VjTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VjTextField.swift; sourceTree = "<group>"; };
 		2782A5BC2BF993B600EF995C /* VjTextFieldExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VjTextFieldExt.swift; sourceTree = "<group>"; };
@@ -65,6 +71,8 @@
 		27673A9D2BFAE72600994B59 /* PersonalFlow */ = {
 			isa = PBXGroup;
 			children = (
+				277ED1412BFED3E90050EBCB /* Questions */,
+				277ED1392BFEC62B0050EBCB /* QuestionTypes */,
 				27673AA02BFAF72D00994B59 /* PersonalQuestionnaireFlowView.swift */,
 			);
 			path = PersonalFlow;
@@ -77,6 +85,40 @@
 				2770B5172BFAAEC300B4E1E2 /* TfaView.swift */,
 			);
 			path = Tfa;
+			sourceTree = "<group>";
+		};
+		277ED1392BFEC62B0050EBCB /* QuestionTypes */ = {
+			isa = PBXGroup;
+			children = (
+				277ED13E2BFED09F0050EBCB /* RadioButtonQuestion */,
+			);
+			path = QuestionTypes;
+			sourceTree = "<group>";
+		};
+		277ED13E2BFED09F0050EBCB /* RadioButtonQuestion */ = {
+			isa = PBXGroup;
+			children = (
+				277ED13A2BFEC6520050EBCB /* RadioButtonQuestionView.swift */,
+				277ED13F2BFED0D10050EBCB /* RadioButtonData.swift */,
+			);
+			path = RadioButtonQuestion;
+			sourceTree = "<group>";
+		};
+		277ED1412BFED3E90050EBCB /* Questions */ = {
+			isa = PBXGroup;
+			children = (
+				277ED13C2BFED0660050EBCB /* TitleTypeQuestionView.swift */,
+			);
+			path = Questions;
+			sourceTree = "<group>";
+		};
+		277ED1422BFED5FF0050EBCB /* VjTextField */ = {
+			isa = PBXGroup;
+			children = (
+				2782A5B92BF98BC900EF995C /* Extentions */,
+				2782A5BA2BF98F2C00EF995C /* VjTextField.swift */,
+			);
+			path = VjTextField;
 			sourceTree = "<group>";
 		};
 		2782A5B42BF9836700EF995C /* Pages */ = {
@@ -118,7 +160,6 @@
 		279223692BF8F6E600FF147B /* vj-forms */ = {
 			isa = PBXGroup;
 			children = (
-				2782A5B92BF98BC900EF995C /* Extentions */,
 				2782A5B42BF9836700EF995C /* Pages */,
 				27CB65A02BF95BA5006DE33B /* Resources */,
 				27CB65992BF9186A006DE33B /* Components */,
@@ -142,10 +183,10 @@
 		27CB65992BF9186A006DE33B /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				277ED1422BFED5FF0050EBCB /* VjTextField */,
 				27CB659A2BF9188C006DE33B /* NavigationBar.swift */,
 				27CB659C2BF92C93006DE33B /* PageHeader.swift */,
 				27CB659E2BF93D38006DE33B /* Card.swift */,
-				2782A5BA2BF98F2C00EF995C /* VjTextField.swift */,
 				2782A5BE2BF9945000EF995C /* VjSecureField.swift */,
 				2782A5C02BF99CB400EF995C /* VjPageButton.swift */,
 			);
@@ -239,11 +280,14 @@
 				2770B5182BFAAEC300B4E1E2 /* TfaView.swift in Sources */,
 				27673A9F2BFAE75700994B59 /* TermAndDisclosureView.swift in Sources */,
 				27CB659F2BF93D38006DE33B /* Card.swift in Sources */,
+				277ED1402BFED0D10050EBCB /* RadioButtonData.swift in Sources */,
+				277ED13D2BFED0660050EBCB /* TitleTypeQuestionView.swift in Sources */,
 				2792236D2BF8F6E600FF147B /* StartApplicationView.swift in Sources */,
 				27CB659D2BF92C94006DE33B /* PageHeader.swift in Sources */,
 				2782A5BB2BF98F2C00EF995C /* VjTextField.swift in Sources */,
 				2792236B2BF8F6E600FF147B /* vj_formsApp.swift in Sources */,
 				2782A5B62BF9839300EF995C /* SignUpView.swift in Sources */,
+				277ED13B2BFEC6520050EBCB /* RadioButtonQuestionView.swift in Sources */,
 				27673AA12BFAF72D00994B59 /* PersonalQuestionnaireFlowView.swift in Sources */,
 				2782A5C12BF99CB400EF995C /* VjPageButton.swift in Sources */,
 				2782A5BF2BF9945000EF995C /* VjSecureField.swift in Sources */,

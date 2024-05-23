@@ -49,6 +49,7 @@ struct SignUpView: View {
                     })
                         .frame(alignment: .bottom)
                 }
+                .padding(.horizontal, 8)
                 Spacer()
             }
         }

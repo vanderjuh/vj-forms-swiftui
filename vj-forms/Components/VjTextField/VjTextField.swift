@@ -12,7 +12,7 @@ struct VjTextField: View {
     @Binding var text: String
 
     var body: some View {
-        VStack(alignment: .leading, spacing: 5) {
+        VStack(alignment: .leading) {
             Text(label)
                 .vjFieldLabelLayout()
             TextField("", text: $text)
@@ -24,6 +24,5 @@ struct VjTextField: View {
 struct VjTextField_Previews: PreviewProvider {
     static var previews: some View {
         VjTextField(label: "Label", text: .constant("Label"))
-            .padding()
     }
 }

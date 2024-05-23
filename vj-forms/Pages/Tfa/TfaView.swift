@@ -28,6 +28,7 @@ struct TfaView: View {
                     .fontWeight(.semibold)
                     .font(.system(size: 12))
             }
+            .padding(.horizontal, 8)
             VjPageButton(label: "Verify Code", action: {
                 self.goToTermsAndDisclosureView = true
             })
