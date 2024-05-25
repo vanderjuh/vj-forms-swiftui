@@ -13,7 +13,7 @@ struct TermAndDisclosureView: View {
     @State private var startApplication = false
     
     var body: some View {
-        VStack {
+        VStack (spacing: .zero) {
             NavigationBar(title: "Personal Account Application", buttonIcon: .questionIcon, showBackButton: true)
             PageHeader(
                 title: "Terms & Disclosures",
@@ -42,16 +42,14 @@ struct TermAndDisclosureView: View {
                 .foregroundColor(Color(UIColor(.defaultFont)))
             }
                 .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/)
-                .padding(.horizontal)
-                .background(Color(.white).padding(.horizontal))
-                .frame(height: 400)
-            
+                .padding()
+                .background(Color(.white).padding())
+            Spacer()
             Toggle(isOn: $acceptedTerms) {
                 Text("I accept the terms and disclosures")
                     .foregroundColor(Color(UIColor(.defaultFont)))
             }
             .padding()
-            Spacer()
             VjPageButton(label: "START APPLICATION", action: {
                 self.startApplication = true
             })

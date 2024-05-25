@@ -16,10 +16,10 @@ extension View {
             }, content: {
                 TfaView()
                     .presentationDetents([.medium])
-                .presentationCornerRadius(40)
+                .presentationCornerRadius(24)
                 .presentationDragIndicator(.visible)
                 .frame(alignment: .top)
-                .background(Color(UIColor(.defaultBackground)))
+                .background(Color(UIColor(.white)))
             })
     }
 }

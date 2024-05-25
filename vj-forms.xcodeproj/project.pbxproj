@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		276697C92C022B0C00519213 /* AddressQuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276697C82C022B0C00519213 /* AddressQuestionView.swift */; };
+		276697CC2C022B6D00519213 /* QuestionTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276697CB2C022B6D00519213 /* QuestionTitleView.swift */; };
+		276697CE2C02447700519213 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276697CD2C02447700519213 /* Location.swift */; };
 		27673A9F2BFAE75700994B59 /* TermAndDisclosureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27673A9E2BFAE75700994B59 /* TermAndDisclosureView.swift */; };
 		27673AA12BFAF72D00994B59 /* PersonalQuestionnaireFlowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27673AA02BFAF72D00994B59 /* PersonalQuestionnaireFlowView.swift */; };
 		2770B5162BFAAE4100B4E1E2 /* VjTfaExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2770B5152BFAAE4100B4E1E2 /* VjTfaExt.swift */; };
@@ -32,6 +35,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		276697C82C022B0C00519213 /* AddressQuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressQuestionView.swift; sourceTree = "<group>"; };
+		276697CB2C022B6D00519213 /* QuestionTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionTitleView.swift; sourceTree = "<group>"; };
+		276697CD2C02447700519213 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		27673A9E2BFAE75700994B59 /* TermAndDisclosureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermAndDisclosureView.swift; sourceTree = "<group>"; };
 		27673AA02BFAF72D00994B59 /* PersonalQuestionnaireFlowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalQuestionnaireFlowView.swift; sourceTree = "<group>"; };
 		2770B5152BFAAE4100B4E1E2 /* VjTfaExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VjTfaExt.swift; sourceTree = "<group>"; };
@@ -68,6 +74,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		276697C72C022AE900519213 /* AddressQuestion */ = {
+			isa = PBXGroup;
+			children = (
+				276697C82C022B0C00519213 /* AddressQuestionView.swift */,
+				276697CD2C02447700519213 /* Location.swift */,
+			);
+			path = AddressQuestion;
+			sourceTree = "<group>";
+		};
+		276697CA2C022B3600519213 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				276697CB2C022B6D00519213 /* QuestionTitleView.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 		27673A9D2BFAE72600994B59 /* PersonalFlow */ = {
 			isa = PBXGroup;
 			children = (
@@ -90,6 +113,8 @@
 		277ED1392BFEC62B0050EBCB /* QuestionTypes */ = {
 			isa = PBXGroup;
 			children = (
+				276697CA2C022B3600519213 /* Common */,
+				276697C72C022AE900519213 /* AddressQuestion */,
 				277ED13E2BFED09F0050EBCB /* RadioButtonQuestion */,
 			);
 			path = QuestionTypes;
@@ -283,13 +308,16 @@
 				277ED1402BFED0D10050EBCB /* RadioButtonData.swift in Sources */,
 				277ED13D2BFED0660050EBCB /* TitleTypeQuestionView.swift in Sources */,
 				2792236D2BF8F6E600FF147B /* StartApplicationView.swift in Sources */,
+				276697CC2C022B6D00519213 /* QuestionTitleView.swift in Sources */,
 				27CB659D2BF92C94006DE33B /* PageHeader.swift in Sources */,
+				276697CE2C02447700519213 /* Location.swift in Sources */,
 				2782A5BB2BF98F2C00EF995C /* VjTextField.swift in Sources */,
 				2792236B2BF8F6E600FF147B /* vj_formsApp.swift in Sources */,
 				2782A5B62BF9839300EF995C /* SignUpView.swift in Sources */,
 				277ED13B2BFEC6520050EBCB /* RadioButtonQuestionView.swift in Sources */,
 				27673AA12BFAF72D00994B59 /* PersonalQuestionnaireFlowView.swift in Sources */,
 				2782A5C12BF99CB400EF995C /* VjPageButton.swift in Sources */,
+				276697C92C022B0C00519213 /* AddressQuestionView.swift in Sources */,
 				2782A5BF2BF9945000EF995C /* VjSecureField.swift in Sources */,
 				279223772BF8F6E700FF147B /* vj_forms.xcdatamodeld in Sources */,
 			);
@@ -431,8 +459,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -460,8 +488,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

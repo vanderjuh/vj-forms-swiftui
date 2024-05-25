@@ -12,16 +12,7 @@ struct RadioButtonQuestionView: View {
     @State private var selectedId: String = ""
     
     var body: some View {
-        VStack {
-            Text(data.questionTitle)
-                .font(.system(size: 16))
-                .fontWeight(.semibold)
-                .lineLimit(nil)
-                .foregroundStyle(.defaultFont)
-                .multilineTextAlignment(.center)
-        }
-        .padding(.horizontal, 64)
-        .padding(.vertical, 16)
+        QuestionTitleView(title: data.questionTitle)
         VStack (spacing: 24) {
             ForEach(data.questionOptions, id: \.self) { option in
                 HStack(spacing: 8) {

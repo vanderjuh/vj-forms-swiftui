@@ -29,11 +29,11 @@ struct TfaView: View {
                     .font(.system(size: 12))
             }
             .padding(.horizontal, 8)
+            Spacer()
             VjPageButton(label: "Verify Code", action: {
                 self.goToTermsAndDisclosureView = true
             })
                 .padding(.vertical, 8)
-            Spacer()
         }
         .fullScreenCover(isPresented: $goToTermsAndDisclosureView, content: {
             TermAndDisclosureView()

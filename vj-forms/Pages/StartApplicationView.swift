@@ -18,7 +18,16 @@ struct StartApplicationView: View {
         NavigationView {
             VStack(spacing: .zero) {
                 NavigationBar(title: "Start Application", buttonIcon: .questionIcon)
-                PageHeader(title: NSLocalizedString("hello_dear", comment: ""), subTitle: "Choose an service type below to start a new application request.")
+                
+                HStack() {
+                    Text("Choose the service that must apply to your needs.")
+                        .font(.system(size: 24))
+                        .foregroundStyle(Color(UIColor(.defaultFont)))
+                    Spacer()
+                }
+                .frame(maxWidth: .infinity)
+                .padding(EdgeInsets(top: 16, leading: 24, bottom: .zero, trailing: 24))
+                
                 VStack(spacing: 24) {
                     NavigationLink(destination: SignUpView(true).navigationBarHidden(true)) {
                         Card(title: "Open Commercial Account", subTitle: "Open a commercial account for your business in some minutes.", image: .buildingsIcon)
